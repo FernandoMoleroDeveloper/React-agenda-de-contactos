@@ -1,0 +1,40 @@
+.contact-item{
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-item__img{
+width: 100px;
+height: 100px;
+margin-right: 20px;
+}
+
+.contact-item__info{
+display: flex
+}
+
+.contact-item__name{
+    margin: 5px 5px 1px 10px;
+}
+
+.contact-item__lastname{
+    margin-top: 5px;
+}
+
+.contact-item__phone{
+margin: 0px 10px;
+}
+
+.contact-item__delete-btn{
+    border: none;
+    background-color: #333;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 15px 10px;
+
+}
