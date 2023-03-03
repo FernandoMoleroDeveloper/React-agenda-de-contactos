@@ -2,25 +2,25 @@ import React from "react";
 import ContactItemMemo from "../ContactItem/ContactItem";
 
 import "./ContactList.css";
-//import { useDebounce } from "use-debounce";
+import { useDebounce } from "use-debounce";
 
 const ContactList = React.memo(() => {
   const API_URL = "http://localhost:4000/contact";
 
   const [contactList, setContactList] = React.useState([]);
   const [filter, setFilter] = React.useState("");
- // const [filterWithTime] = useDebounce(filter, 500);
+  const [filterWithTime] = useDebounce(filter, 500);
 
-/* React.useEffect(() => {
+React.useEffect(() => {
 
         
     
-    fetch(`${API_URL}${filterWithTime}`)
+    fetch(`${API_URL}?q=${filterWithTime}`)
         .then((response) => response.json())
         .then((data) => {
             setContactList(data);
         }) 
-}, [filterWithTime]);*/
+}, [filterWithTime]);
   
   const [newContact, setNewContact] = React.useState({
     name: "",
